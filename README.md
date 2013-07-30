@@ -1,4 +1,4 @@
-# Mustdown
+# Mustdown [![Build Status](https://secure.travis-ci.org/simonc/mustdown.png?branch=master)](http://travis-ci.org/simonc/mustdown) [![Code Climate](https://codeclimate.com/github/simonc/mustdown.png)](https://codeclimate.com/github/simonc/mustdown) [![Coverage Status](https://coveralls.io/repos/simonc/mustdown/badge.png?branch=master)](https://coveralls.io/r/simonc/mustdown?branch=master)
 
 Mustdown provides helpers to ease the use of markdown, mustache and both of
 them.
