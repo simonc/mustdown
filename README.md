@@ -10,7 +10,7 @@ Add the gem to your `Gemfile` :
 
 Then call `bundle install` to install it for your application.
 
-## Provided helpers
+## Usage in Rails
 
 ### markdown
 
@@ -52,6 +52,37 @@ Output:
 
 ``` html
 <h1>Hello World</h1>
+```
+
+## Usage outside of Rails
+
+If you're not using Rails, it's possible to use the Mustdown module directly.
+
+### markdown
+
+This will render the given text through Markdown.
+
+``` ruby
+Mustdown.markdown("# Hello World")
+# => "<h1>Hello World</h1>"
+```
+
+### mustache
+
+The `mustache` method renders a mustache template with the given binding object.
+
+``` ruby
+Mustdown.mustache("Hello {{name}}", name: 'John')
+# => "Hello John"
+```
+
+### mustdown
+
+This method is more complex since it provides the two previous methods in one.
+
+``` ruby
+Mustdown.mustdown("# {{title}}", title: 'Hello World')
+# => "<h1>Hello World</h1>"
 ```
 
 ## Mustdown configuration
