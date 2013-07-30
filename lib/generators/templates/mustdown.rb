@@ -22,4 +22,6 @@ Mustdown.configure do |config|
   #   safe_links_only:  true
   # }
 
+  # Markdown renderer class
+  # config.markdown_renderer = Redcarpet::Render::HTML
 end
