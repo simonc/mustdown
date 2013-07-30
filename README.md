@@ -1,6 +1,7 @@
 # Mustdown
 
-Mustdown provides helpers to ease the use markdown, mustache and both of them.
+Mustdown provides helpers to ease the use of markdown, mustache and both of
+them.
 
 ## Installation
 
@@ -111,7 +112,6 @@ A very useful technique is to use templates from I18n.
 Let's take an example. Given the following models in your app:
 
 ![Company(name) -> Project(title,url)](http://yuml.me/626df1f5)
-
 
 Define the following in `config/locales/en.yml`:
 
