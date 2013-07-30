@@ -1,21 +1,28 @@
+# Public: Wrapper class for Mustdown.
+#
+# This module is a Rails helper that provides an easy access to the Mustdown
+# rendering methods.
 module Mustdown
   module MustdownHelper
-    def markdown(content, markdown_extensions = {}, renderer_options = {})
-      md_exts = Mustdown.markdown_extensions.merge(markdown_extensions)
-      renderer_opts = Mustdown.renderer_options.merge(renderer_options)
-
-      renderer = Mustdown.renderer.new(renderer_opts)
-      markdown = Redcarpet::Markdown.new(renderer, md_exts)
-
-      markdown.render(content).html_safe
+    # Public: Calls Mustdown.markdown.
+    #
+    # See Mustdown.markdown.
+    def markdown(*args)
+      Mustdown.markdown(*args).html_safe
     end
 
-    def mustache(template, resource)
-      Mustache.render(template, resource).html_safe
+    # Public: Calls Mustdown.mustache.
+    #
+    # See Mustdown.mustache.
+    def mustache(*args)
+      Mustdown.mustache(*args).html_safe
     end
 
-    def mustdown(template, resource, *markdown_args)
-      markdown mustache(template, resource), *markdown_args
+    # Public: Calls Mustdown.mustdown.
+    #
+    # See Mustdown.mustdown.
+    def mustdown(*args)
+      Mustdown.mustdown(*args).html_safe
     end
   end
 end
