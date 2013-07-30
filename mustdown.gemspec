@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "redcarpet", ">= 2.0.0"
   s.add_dependency "mustache", ">= 0.99.4"
 
+  s.add_development_dependency "coveralls", "~> 0.6"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
 end
