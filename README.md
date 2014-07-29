@@ -148,3 +148,29 @@ Output:
   <li><a href="https://github.com/github/gollum">Gollum</a></li>
 </ul>
 ```
+
+## Usage as a helper
+
+### ActionMailer
+
+It is possible to use Mustdown when composing your emails but to do so you need to reference it as a helper
+
+``` ruby
+class MyAwesomeMailer < ActionMailer::Base
+  helper :'mustdown/mustdown'
+  
+  # ...
+end
+```
+
+### Cells
+
+If you try to use Mustdown with Cells, you need to add it as a helper like this:
+
+``` ruby
+class HomeListingsCell < Cell::Rails
+  helper :'mustdown/mustdown'
+
+  # ...
+end
+```
