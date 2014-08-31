@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+* FIX an issue preventing the use of default markdown settings
+
 ## 0.1.0
 
 * ADD the license to the gemspec
