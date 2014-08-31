@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "mustdown"
   s.version     = Mustdown::VERSION
   s.authors     = ["Simon COURTOIS"]
-  s.email       = ["scourtois+cubyx@cubyx.fr"]
+  s.email       = ["scourtois_github@cubyx.fr"]
   s.homepage    = "http://github.com/simonc/mustdown"
   s.summary     = "Rails helpers to use Markdown and Mustache all together"
   s.description = "Rails helpers to use Markdown and Mustache all together"
