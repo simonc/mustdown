@@ -133,8 +133,8 @@ module Mustdown
   #
   # Returns the rendered markdown String.
   def markdown(template, markdown_extensions = {}, renderer_options = {})
-    exts = markdown_extensions.merge(markdown_extensions)
-    opts = renderer_options.merge(renderer_options)
+    exts = self.markdown_extensions.merge(markdown_extensions)
+    opts = self.renderer_options.merge(renderer_options)
 
     renderer = markdown_renderer.new(opts)
     markdown = Redcarpet::Markdown.new(renderer, exts)
