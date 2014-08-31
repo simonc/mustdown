@@ -73,15 +73,15 @@ shared_examples_for "Mustdown" do
 
     context "when overriding no_links to true" do
       it "doesn't generate any link" do
-        output = subject.markdown("[a](test)", {}, { no_links: true })
+        output = subject.markdown("[a](http://test.com)", {}, { no_links: true })
         output.should_not match(/<a /)
       end
     end
 
     context "when overriding no_links to false" do
       it "doesn't generate any link" do
-        output = subject.markdown("[a](test)", {}, { no_links: false })
-        output.should match(/<a /)
+        output = subject.markdown("[a](http://test.com)", {}, { no_links: false })
+        output.match(/<a /)
       end
     end
   end
