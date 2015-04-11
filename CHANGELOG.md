@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 0.2.0
 
 * FIX redcarpet to v3 for security reasons
 * DEL renderer and renderer= methods on Mustdown
