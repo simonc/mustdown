@@ -95,7 +95,7 @@ module Mustdown
   #
   # Returns an Object.
   def renderer
-    warn "Mustdown.renderer is deprecated. Use Mustdown.markdown_renderer instead."
+    warn 'Mustdown.renderer is deprecated. Use Mustdown.markdown_renderer instead.'
     self.markdown_renderer
   end
 
@@ -105,7 +105,7 @@ module Mustdown
   #
   # Returns nothing.
   def renderer=(value)
-    warn "Mustdown.renderer= is deprecated. Use Mustdown.markdown_renderer= instead."
+    warn 'Mustdown.renderer= is deprecated. Use Mustdown.markdown_renderer= instead.'
     self.markdown_renderer = value
   end
 
