@@ -89,26 +89,6 @@ module Mustdown
     @markdown_renderer ||= Redcarpet::Render::HTML
   end
 
-  # Deprecated:  Returns the markdown renderer.
-  #
-  # Use markdown_renderer instead.
-  #
-  # Returns an Object.
-  def renderer
-    warn 'Mustdown.renderer is deprecated. Use Mustdown.markdown_renderer instead.'
-    self.markdown_renderer
-  end
-
-  # Deprecated: Sets the markdown renderer
-  #
-  # Use markdown_renderer= instead.
-  #
-  # Returns nothing.
-  def renderer=(value)
-    warn 'Mustdown.renderer= is deprecated. Use Mustdown.markdown_renderer= instead.'
-    self.markdown_renderer = value
-  end
-
   # Public: Renders a markdown template.
   #
   # template            - The String template containing markdown template.

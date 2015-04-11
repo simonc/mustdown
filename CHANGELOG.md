@@ -1,5 +1,10 @@
 # Changelog
 
+## HEAD
+
+* FIX redcarpet to v3 for security reasons
+* DEL renderer and renderer= methods on Mustdown
+
 ## 0.1.1
 
 * FIX an issue preventing the use of default markdown settings
