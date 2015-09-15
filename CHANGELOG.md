@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+* ADD using Handlebars to handle mustache templates
+
 ## 0.2.0
 
 * FIX redcarpet to v3 for security reasons

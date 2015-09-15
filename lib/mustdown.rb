@@ -1,7 +1,7 @@
 require 'bundler/setup'
 
 require 'redcarpet'
-require 'mustache'
+require 'handlebars'
 
 require 'mustdown/engine' if defined?(Rails)
 
@@ -140,7 +140,7 @@ module Mustdown
   #
   # Returns the rendered mustache String.
   def mustache(template, resource)
-    Mustache.render(template, resource)
+    Handlebars::Context.new.compile(template).call(resource)
   end
 
   # Public: Renders a mustache+markdown template.

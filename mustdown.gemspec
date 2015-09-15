@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '>= 3.1.1'
   s.add_dependency 'redcarpet', '~> 3.2'
-  s.add_dependency 'mustache', '~> 1.0'
+  s.add_dependency 'handlebars', '~> 0.7'
 
   s.add_development_dependency 'coveralls', '~> 0.8'
   s.add_development_dependency 'sqlite3'
