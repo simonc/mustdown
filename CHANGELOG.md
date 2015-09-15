@@ -2,6 +2,8 @@
 
 ## HEAD
 
+## 1.0.0
+
 * ADD using Handlebars to handle mustache templates
 
 ## 0.2.0
