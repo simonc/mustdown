@@ -18,11 +18,17 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ['MIT-LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
 
-  s.add_dependency 'rails', '>= 3.1.1'
   s.add_dependency 'redcarpet', '~> 3.2'
   s.add_dependency 'handlebars', '~> 0.7'
 
+  s.add_development_dependency 'appraisal', '~> 2.1'
+  s.add_development_dependency 'capybara', '~> 2.12'
   s.add_development_dependency 'coveralls', '~> 0.8'
-  s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'guard', '~> 2.14'
+  s.add_development_dependency 'guard-rspec', '~> 4.7'
+  s.add_development_dependency 'rake', '~> 12.0'
+  s.add_development_dependency 'rb-fchange', '~> 0.0.6'
+  s.add_development_dependency 'rb-fsevent', '~> 0.9'
+  s.add_development_dependency 'rb-inotify', '~> 0.9'
+  s.add_development_dependency 'rspec-rails', '~> 3.5'
 end

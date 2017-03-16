@@ -1,9 +1,36 @@
-#!/usr/bin/env rake
-begin
-  require 'bundler/setup'
-rescue LoadError
-  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
+require 'rubygems'
+require 'bundler/setup'
+
+#
+# Bundler related tasks
+#
+
+require 'bundler/gem_tasks'
+
+#
+# RSpec related tasks
+#
+
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new(:spec)
+
+default_task = :spec
+
+#
+# Appraisal related tasks
+#
+
+require 'appraisal'
+
+unless ENV['APPRAISAL_INITIALIZED'] || ENV['TRAVIS']
+  default_task = :appraisal
 end
+
+#
+# RDOC related tasks
+#
+
 begin
   require 'rdoc/task'
 rescue LoadError
@@ -20,10 +47,8 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-require 'rspec/core/rake_task'
+#
+# Default task
+#
 
-RSpec::Core::RakeTask.new(:spec)
-
-task :default => :spec
-
-Bundler::GemHelper.install_tasks
+task default: default_task
