@@ -1,4 +1,4 @@
-# Mustdown [![Build Status](https://secure.travis-ci.org/simonc/mustdown.png?branch=master)](http://travis-ci.org/simonc/mustdown) [![Code Climate](https://codeclimate.com/github/simonc/mustdown.png)](https://codeclimate.com/github/simonc/mustdown) [![Coverage Status](https://coveralls.io/repos/simonc/mustdown/badge.png?branch=master)](https://coveralls.io/r/simonc/mustdown?branch=master)
+# Mustdown [![Build Status](https://api.travis-ci.org/simonc/mustdown.svg?branch=master)](http://travis-ci.org/simonc/mustdown) [![Code Climate](https://codeclimate.com/github/simonc/mustdown.svg)](https://codeclimate.com/github/simonc/mustdown) [![Coverage Status](https://coveralls.io/repos/simonc/mustdown/badge.svg?branch=master)](https://coveralls.io/r/simonc/mustdown?branch=master)
 
 Mustdown provides helpers to ease the use of markdown, mustache and both of
 them.
@@ -121,9 +121,9 @@ en:
     show:
       text: |
         # {{name}}
-        
+
         {{name}} is a great company ! Here are some of their projects:
-        
+
         {{#projects}}
         * [{{title}}]({{url}})
         {{/projects}}
@@ -158,7 +158,7 @@ It is possible to use Mustdown when composing your emails but to do so you need 
 ``` ruby
 class MyAwesomeMailer < ActionMailer::Base
   helper :'mustdown/mustdown'
-  
+
   # ...
 end
 ```
