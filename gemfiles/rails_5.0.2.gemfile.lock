@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    mustdown (1.0.0)
+    mustdown (2.0.0)
       handlebars (~> 0.7)
       redcarpet (~> 3.2)
 

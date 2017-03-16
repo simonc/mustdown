@@ -2,6 +2,11 @@
 
 ## HEAD
 
+## 2.0.0
+
+* FIX Missing method `helper` with Rails 5 `ActionController::API`
+* DEL Support for Ruby version < 2.2
+
 ## 1.0.0
 
 * ADD using Handlebars to handle mustache templates
